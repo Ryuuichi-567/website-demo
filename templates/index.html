@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Display</title>
+</head>
+<body>
+    <h1>Attendance Display</h1>
+    {% if table %}
+        {{ table|safe }}
+    {% else %}
+        <p>No data available</p>
+    {% endif %}
+    <br>
+    <a href="/upload">Upload CSV</a>
+</body>
+</html>
